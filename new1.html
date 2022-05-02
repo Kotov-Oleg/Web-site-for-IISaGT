@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выпуск ПИ-Б20-2!!</title>
+    <link rel="stylesheet" href="/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="sticky-top">
+        <!-- навбар с лого -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+            <div class="container">
+                <a href="https://www.rshu.ru/" target="_blank" class="navbar-brand">
+                    <img src="/data/лого_рггму.png" width="70" alt="">
+                </a>
+                <div class="vr bg-white"></div>
+                <a href="index.html" class="navbar-brand ms-3">
+                    <img src="/data/лого_исигт.png" width="70" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item me-2">
+                        <a href="index.html" class="nav-link text-wrap">Главная страница</a>
+                    </li>
+                    <li class="nav-item me-2 dropdown">
+                        <a href="" class="nav-link text-wrap dropdown-toggle"
+                        id="dropDirection" role="button" data-bs-toggle="dropdown" aria-expanded="false">Дирекция</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropDirection">
+                            <li><a href="" class="dropdown-item">Директор</a></li>
+                            <li><a href="" class="dropdown-item">Заместитель директора</a></li>
+                            <li><a href="" class="dropdown-item">Учебно-методические работники</a></li>
+                            <li><a href="" class="dropdown-item">Чем занимается институт</a></li>
+                            <li><a href="" class="dropdown-item">Все направления подготовки</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-2 dropdown">
+                        <a href="" class="nav-link text-wrap dropdown-toggle"
+                        id="dropSNO" role="button" data-bs-toggle="dropdown" aria-expanded="false">Студенческое научное общество</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropSNO">
+                            <li><a href="" class="dropdown-item">Мероприятия</a></li>
+                            <li><a href="" class="dropdown-item">Олимпиады</a></li>
+                            <li><a href="" class="dropdown-item">Научная работа</a></li>
+                            <li><a href="" class="dropdown-item">Клубы по интересам</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-2 dropdown">
+                        <a href="" class="nav-link text-wrap dropdown-toggle"
+                        id="dropNYLC" role="button" data-bs-toggle="dropdown" aria-expanded="false">НУЛЦ</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropNYLC">
+                            <li><a href="" class="dropdown-item">Лаборатории</a></li>
+                            <li><a href="" class="dropdown-item">Заведующий</a></li>
+                            <li><a href="" class="dropdown-item">Чем занимаемся</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-2 dropdown">
+                        <a href="" class="nav-link text-wrap dropdown-toggle"
+                        id="dropDepartmets" role="button" data-bs-toggle="dropdown" aria-expanded="false">Кафедры</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropDirection">
+                            <li><a href="" class="dropdown-item">Список всех кафедр</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <div action="" class="d-flex">
+                    <button class="btn btn-outline-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Войти</button>
+                </div>
+            </div>   
+            </div>
+        </nav>
+    </header>
+
+    <!-- создание модального окна -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true" aria-bs-labelledby="exampleModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Авторизация</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>     
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row mb-3">
+                            <label for="inputEmail" class="col-sm-2 col-form-label">Логин</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPass" class="col-sm-2 col-form-label">Пароль</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPass">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Зарегистрироваться</button>
+                    <button class="btn btn-success">Войти</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="row ms-5 mt-5">
+        <!-- колонка с тегами -->
+        <div class="col-2">
+            <table class="table table-light">
+                <thead>
+                    <tr>
+                        <th>
+                            <a href="" class="text-black text-decoration-none">Все новости</a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Сортировка по тегам</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-primary">Поступающим</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-secondary">Образование</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-success">Наука</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-danger">Общество</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-warning">Университетская жизнь</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-light">Олимпиады</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-dark">Мероприятия</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-info">Спорт</button>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- новость -->
+        <div class="col-9 ms-5">
+            <table class="table bg-white">
+                <tr>
+                    <th scope="col">
+                        <h4>Выпуск ПИ-Б20-2!!</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/data/k1.jpg" width="800"alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas minus odio pariatur, deleniti quam eveniet architecto nisi quo a quod soluta provident dolorem eius ab eos ad error minima corrupti esse aliquam modi voluptatum. Molestias, fugit eum modi, doloremque cumque architecto delectus, nemo sapiente aliquid totam voluptatem laborum inventore veniam itaque enim consequuntur non repudiandae. Eaque quia nemo, nihil praesentium amet aperiam ab, debitis magni exercitationem quos saepe ullam explicabo eveniet sed sapiente facilis vero corrupti suscipit optio dolore sit animi, odio quod! Explicabo nobis perferendis tempore temporibus repudiandae, suscipit aut sit illo, adipisci, perspiciatis molestiae saepe reiciendis cum quo.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/data/k5.jpg" width="700" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ea animi asperiores dignissimos hic molestiae voluptates numquam adipisci voluptatum obcaecati? Eum modi rerum consequatur? Iusto molestiae ut, ratione temporibus repellat minus quasi eveniet voluptatem, quam mollitia tempore beatae alias eaque ex rem incidunt dignissimos. Voluptatibus ipsum quas, incidunt provident dolor repellat perspiciatis odio nemo molestias aliquid voluptas sapiente eius neque debitis veritatis tempora iusto porro et eveniet minus quod facere dolore in. Alias nemo quo omnis autem quia voluptatum aperiam assumenda commodi facere nihil eum et cupiditate necessitatibus minus velit error laudantium explicabo, itaque, illum sapiente debitis inventore numquam! Ratione a incidunt excepturi deserunt illum animi ab praesentium magni fugiat, soluta perspiciatis deleniti inventore doloribus sunt molestias hic architecto fuga eveniet porro nobis explicabo dolorum id esse magnam? Tenetur possimus unde amet odio, vero ad non recusandae. Beatae, rerum. Minus ullam autem quaerat eligendi deserunt placeat reiciendis ab molestiae excepturi nobis perferendis praesentium odio tempore, nisi rerum consequuntur. Exercitationem quo placeat perspiciatis? Id, nulla! Ad labore laborum vitae ipsa quas doloribus magni, nobis eaque soluta rerum alias quae sint. Perferendis animi neque excepturi consectetur in, voluptate labore libero reprehenderit illo ipsum nihil dignissimos repellat fuga nulla culpa cupiditate quo rem.
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    
+
+
+
+    <!-- footer -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="row mx-5">
+            <div class="col">
+                © 2022 Институт информационных систем и геотехнологий (ИСиГТ) РГГМУ <br>
+                <a href="https://www.rshu.ru/" target="_blank" class="text-white">https://www.rshu.ru/</a> <br>
+                Соцсети: <br>
+                <a href="https://vk.com/is_rshu" target="_blank">
+                    <img src="/data/logo-vk.svg" width="40" alt="">
+                </a>
+            </div>
+            <div class="col">
+                Контакты: <br>
+                <img src="data/logo-mail.png" width="25" alt="">
+                    dekanat_is@rshu.ru <br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+                +7-812-633-01-86 <br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg>
+                просп. Металлистов, 3, Санкт-Петербург
+            </div>
+            <div class="col text-end align-self-end">
+                <span>prod by Олежа</span>
+            </div>
+        </div>
+    </footer>
+<script src="/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
