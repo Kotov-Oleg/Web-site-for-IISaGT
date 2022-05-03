@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ИИСиГТ - Институт Информационных Систем и ГеоТехгологий</title>
+    <title>Мероприятия</title>
     <link rel="stylesheet" href="/bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +17,7 @@
                     <img src="/data/лого_рггму.png" width="70" alt="">
                 </a>
                 <div class="vr bg-white"></div>
-                <a href="" class="navbar-brand ms-3">
+                <a href="index.html" class="navbar-brand ms-3">
                     <img src="/data/лого_исигт.png" width="70" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item me-2">
-                        <a href="" class="nav-link text-wrap">Главная страница</a>
+                        <a href="index.html" class="nav-link text-wrap">Главная страница</a>
                     </li>
                     <li class="nav-item me-2 dropdown">
                         <a href="" class="nav-link text-wrap dropdown-toggle"
@@ -108,10 +108,146 @@
         </div>
     </div>
 
+    <!-- страничка с мероприятиями -->
+    <div class="row mt-5">
+        <div class="col offset-2">
+            <h4>Мероприятия</h4>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col offset-1">
+            <!-- календарь -->
+            <div class="calendar">
+                <div class="calendar__opts">
+                <select name="calendar__month" id="calendar__month">
+                    <option>Январь</option>
+                    <option>Февраль</option>
+                    <option>Март</option>
+                    <option>Апрель</option>
+                    <option selected>Май</option>
+                    <option>Июнь</option>
+                    <option>Июль</option>
+                    <option>Август</option>
+                    <option>Сентябрь</option>
+                    <option>Октябрь</option>
+                    <option>Ноябрь</option>
+                    <option>Декабрь</option>
+                </select>
+            
+                <select name="calendar__year" id="calendar__year">
+                    <option>2021</option>
+                    <option selected>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                    <option>2027</option>
 
 
 
-    
+                </select>
+                </div>
+            
+                <div class="calendar__body">
+                <div class="calendar__days">
+                    <div>ПН</div>
+                    <div>ВТ</div>
+                    <div>СР</div>
+                    <div>ЧТ</div>
+                    <div>ПТ</div>
+                    <div>СБ</div>
+                    <div>ВС</div>
+                </div>
+            
+                <div class="calendar__dates">
+                    <div class="calendar__date calendar__date--grey"><span>27</span></div>
+                    <div class="calendar__date calendar__date--grey"><span>28</span></div>
+                    <div class="calendar__date calendar__date--grey"><span>29</span></div>
+                    <div class="calendar__date calendar__date--grey"><span>30</span></div>
+                    <div class="calendar__date"><span>1</span></div>
+                    <div class="calendar__date"><span>2</span></div>
+                    <div class="calendar__date"><span>3</span></div>
+                    <div class="calendar__date calendar__date--range-end"><span>4</span></div>
+                    <div class="calendar__date"><span>5</span></div>
+                    <div class="calendar__date"><span>6</span></div>
+                    <div class="calendar__date"><span>7</span></div>
+                    <div class="calendar__date"><span>8</span></div>
+                    <div class="calendar__date"><span>9</span></div>
+                    <div class="calendar__date"><span>10</span></div>
+                    <div class="calendar__date"><span>11</span></div>
+                    <div class="calendar__date"><span>12</span></div>
+                    <div class="calendar__date"><span>13</span></div>
+                    <div class="calendar__date"><span>14</span></div>
+                    <div class="calendar__date"><span>15</span></div>
+                    <div class="calendar__date"><span>16</span></div>
+                    <div class="calendar__date"><span>17</span></div>
+                    <div class="calendar__date"><span>18</span></div>
+                    <div class="calendar__date"><span>19</span></div>
+                    <div class="calendar__date"><span>20</span></div>
+                    <div class="calendar__date"><span>21</span></div>
+                    <div class="calendar__date"><span>22</span></div>
+                    <div class="calendar__date"><span>23</span></div>
+                    <div class="calendar__date"><span>24</span></div>
+                    <div class="calendar__date"><span>25</span></div>
+                    <div class="calendar__date"><span>26</span></div>
+                    <div class="calendar__date"><span>27</span></div>
+                    <div class="calendar__date"><span>28</span></div>
+                    <div class="calendar__date"><span>29</span></div>
+                    <div class="calendar__date"><span>30</span></div>
+                    <div class="calendar__date"><span>31</span></div>
+                </div>
+                </div>
+            
+                <div class="calendar__buttons">
+                    <div class="row">
+                        <div class="col">
+                            <button class="calendar__button calendar__button--primary" data-bs-toggle="modal" data-bs-target="#writeEvent">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- /календарь -->
+        </div>
+
+        <div class="col-3">
+            <h4>Выберите аудиторию:</h4> <br>
+            <button class="btn btn-primary mt-1">
+                110а
+            </button> <br>
+            <button class="btn btn-primary mt-1">
+                104
+            </button> <br>
+            <button class="btn btn-primary mt-1">
+                108
+            </button> <br>
+        </div>
+    </div>
+
+    <!-- модальное окно для записи -->
+    <div class="modal fade" id="writeEvent" tabindex="-1" aria-hidden="true" aria-bs-labelledby="writeEventLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="writeEventLabel">
+                        Запись на мероприятие
+                    </h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 ></h4>
+                    <div class="row gy-1">
+                        <div class="col-4 offset-4"><button type="button" class="btn btn-primary w-100">10:00-12:00</button></div>
+                        <div class="col-4 offset-4"><button type="button" class="btn btn-primary w-100">12:00-14:00</button></div>
+                        <div class="col-4 offset-4"><button type="button" class="btn btn-primary w-100">14:00-16:00</button></div>
+                        <div class="col-4 offset-4"><button type="button" class="btn btn-primary w-100">16:00-18:00</button></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" data-bs-dismiss="modal" aria-label="close">Записаться</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- footer -->
     <footer class="bg-dark text-white mt-5">
