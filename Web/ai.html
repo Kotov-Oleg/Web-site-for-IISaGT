@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мероприятия</title>
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <!-- навбар с лого -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a href="https://www.rshu.ru/" target="_blank" class="navbar-brand">
+                    <img src="data/лого_рггму.png" width="70" alt="">
+                </a>
+                <div class="vr bg-white"></div>
+                <a href="index.html" class="navbar-brand ms-3">
+                    <img src="data/лого_исигт.png" width="70" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item me-2">
+                            <a href="index.html" class="nav-link text-wrap">Главная страница</a>
+                        </li>
+                        <li class="nav-item me-2 dropdown">
+                            <a href="" class="nav-link text-wrap dropdown-toggle" id="dropDirection" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Дирекция</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropDirection">
+                                <li><a href="" class="dropdown-item">Директор</a></li>
+                                <li><a href="" class="dropdown-item">Заместитель директора</a></li>
+                                <li><a href="" class="dropdown-item">Учебно-методические работники</a></li>
+                                <li><a href="" class="dropdown-item">Чем занимается институт</a></li>
+                                <li><a href="" class="dropdown-item">Все направления подготовки</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-2 dropdown">
+                            <a href="" class="nav-link text-wrap dropdown-toggle" id="dropSNO" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Студенческое научное общество</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropSNO">
+                                <li><a href="events.html" class="dropdown-item">Мероприятия</a></li>
+                                <li><a href="" class="dropdown-item">Олимпиады</a></li>
+                                <li><a href="" class="dropdown-item">Научная работа</a></li>
+                                <li><a href="" class="dropdown-item">Клубы по интересам</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-2 dropdown">
+                            <a href="" class="nav-link text-wrap dropdown-toggle" id="dropNYLC" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">НУЛЦ</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropNYLC">
+                                <li><a href="" class="dropdown-item">Лаборатории</a></li>
+                                <li><a href="" class="dropdown-item">Заведующий</a></li>
+                                <li><a href="" class="dropdown-item">Чем занимаемся</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-2 dropdown">
+                            <a href="" class="nav-link text-wrap dropdown-toggle" id="dropDepartmets" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Кафедры</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropDirection">
+                                <li><a href="" class="dropdown-item">Высшей математики и теоретической механики</a></li>
+                            <li><a href="" class="dropdown-item">Информационных технологий и систем безопасности</a></li>
+                            <li><a href="" class="dropdown-item">Морских информационных систем</a></li>
+                            <li><a href="ai.html" class="dropdown-item">Прикладной информатики</a></li>
+                            <li><a href="" class="dropdown-item">Физики</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <div action="" class="d-flex">
+                        <button class="btn btn-outline-success me-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Войти</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- создание модального окна -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true" aria-bs-labelledby="exampleModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Авторизация</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row mb-3">
+                            <label for="inputEmail" class="col-sm-2 col-form-label">Логин</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPass" class="col-sm-2 col-form-label">Пароль</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPass">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Зарегистрироваться</button>
+                    <button class="btn btn-success">Войти</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- страничка с информацией о кафедре -->
+
+    <div class="row mx-5 mt-5">
+        <div class="col-3">
+            <h4 class="mb-3">Кафедры</h4>
+            <div class="card">
+                <div class="card-header feat">
+                    Прикладной информатики
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item list">Высшей математики и теоретической механики</li>
+                  <li class="list-group-item list">Информационных технологий и систем безопасности</li>
+                  <li class="list-group-item list">Морских информационных систем</li>
+                  <li class="list-group-item list">Физики</li>
+                </ul>
+              </div>
+        </div>
+
+        <div class="col-8 ms-5">
+            <table class="table bg-white">
+                <tr>
+                    <th scope="col">
+                        <h4>Кафедра прикладной информатики</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        Кафедра прикладной информатики создана с целью подготовки обучающихся lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas minus odio pariatur, deleniti quam eveniet architecto nisi quo a quod soluta provident dolorem eius ab eos ad error minima corrupti esse aliquam modi voluptatum. Molestias, fugit eum modi, doloremque cumque architecto delectus, nemo sapiente aliquid totam voluptatem laborum inventore veniam itaque enim consequuntur non repudiandae. Eaque quia nemo, nihil praesentium amet aperiam ab, debitis magni exercitationem quos saepe ullam explicabo eveniet sed sapiente facilis vero corrupti suscipit optio dolore sit animi, odio quod! Explicabo nobis perferendis tempore temporibus repudiandae, suscipit aut sit illo, adipisci, perspiciatis molestiae saepe reiciendis cum quo.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row g-0 bg-light position-relative">
+                            <div class="col-md-5 mb-md-0 p-md-4">
+                              <img src="data/1.png" style="width: 80%;" alt="...">
+                            </div>
+                            <div class="col-md-7 p-4 ps-md-0">
+                              <h5 class="mt-0">Заведующий кафедрой - Истомин Е.П.</h5>
+                              <p>Профессор, доктор технических наук. Направления работы: применение ЭВМ и автоматизация управления силами флота; Государственное муниципальное управление
+                                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            </div>
+                          </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="card bg-light">
+                                        <img src="data/k4.jpg"class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Преподаватель</h5>
+                                            <p class="card-text">О преподавателе <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                Neque hic necessitatibus similique ex adipisci inventore ullam laudantium, error
+                                                dignissimos at minus et aspernatur impedit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card bg-light">
+                                        <img src="data/k5.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Преподаватель</h5>
+                                            <p class="card-text">О преподавателе <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                Neque hic necessitatibus similique ex adipisci inventore ullam laudantium, error
+                                                dignissimos at minus et aspernatur impedit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card bg-light">
+                                        <img src="data/k3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Преподаватель</h5>
+                                            <p class="card-text">О преподавателе <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                Neque hic necessitatibus similique ex adipisci inventore ullam laudantium, error
+                                                dignissimos at minus et aspernatur impedit.</p>
+                                         </div>       
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <button class="calendar__button calendar__button--primary" data-bs-toggle="modal" data-bs-target="#writeEvent">
+                                Записаться
+                            </button> -->
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Направления подготовки</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list">09.03.03	Прикладная информатика	Прикладные информационные системы и технологии</li>
+                            <li class="list-group-item list">38.03.05	Бизнес-информатика	Бизнес-информатика</li>
+                          </ul>
+                    </td>
+                </tr>
+               
+            </table>
+        </div>
+    </div>
+
+
+
+
+   
+    <!-- footer -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="row mx-5">
+            <div class="col">
+                © 2022 Институт информационных систем и геотехнологий (ИСиГТ) РГГМУ <br>
+                <a href="https://www.rshu.ru/" target="_blank" class="text-white">https://www.rshu.ru/</a> <br>
+                <a href="https://vk.com/is_rshu" target="_blank">
+                    <img src="data/logo-vk.svg" width="40" alt="">
+                </a>
+            </div>
+            <div class="col">
+                Контакты: <br>
+                <img src="data/logo-mail.png" width="25" alt="">
+                dekanat_is@rshu.ru <br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg>
+                +7-812-633-01-86 <br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg>
+                просп. Металлистов, 3, Санкт-Петербург
+            </div>
+            <div class="col text-end align-self-end">
+                <span>prod by Олежа</span>
+            </div>
+        </div>
+    </footer>
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
