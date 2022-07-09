@@ -1,3 +1,5 @@
+// подключение к бд
+
 const {Sequelize} = require('sequelize')
 
 module.exports = new Sequelize(

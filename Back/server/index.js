@@ -10,6 +10,7 @@ const path = require('path')
 
 const PORT = process.env.PORT || 5000
 
+// прописываем все что использует express, чтобы работало)
 const app = express()
 app.use(cors())
 app.use(express.json())
@@ -29,6 +30,5 @@ const start = async () => {
         console.log(e)
     }
 }
-
 
 start()

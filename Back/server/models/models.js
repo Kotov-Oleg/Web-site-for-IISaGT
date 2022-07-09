@@ -1,3 +1,4 @@
+// создание бд с помощью sequelize
 const sequelize = require('../db')
 const {DataTypes} = require('sequelize')
 
@@ -23,7 +24,7 @@ const Event = sequelize.define('event', {
 })
 
 
-
+// экспорт всех созданных таблиц
 module.exports = {
   Event,
 }
